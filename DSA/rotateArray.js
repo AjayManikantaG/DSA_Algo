@@ -9,11 +9,13 @@ const rotateArray = (inputArray, rotationCount = 0) => {
 
   if (rotationCount === 0) {
     return inputArray;
-  } else if (inputArray.length === 0 || inputArray.length === 1) {
+  } else if (
+    inputArray.length === 0 ||
+    inputArray.length === 1 ||
+    inputArray.length === rotationCount
+  ) {
     return inputArray;
   }
 
-  for (let i = 0; i < inputArray.length; i++) {
-    
-  }
+  for (let i = 0; i < inputArray.length; i++) {}
 };
